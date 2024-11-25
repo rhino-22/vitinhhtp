@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom"
 import Header from "@/components/Header/Header"
 import Footer from "@/components/Footer/Footer"
+import { Container } from "@mui/material"
 
 const App = () => {
   return (
@@ -18,7 +19,9 @@ const App = () => {
         </ul>
       </nav>
       <main>
-        <Outlet />
+          <Container>
+            <Outlet />
+        </Container>
       </main>
       <Footer />
     </>
